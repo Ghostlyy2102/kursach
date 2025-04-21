@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include "Taxi.h"
 #include "TaxiList.h"
@@ -7,7 +7,6 @@
 #include "StatusForm.h"
 
 namespace TaxiManager {
-
     using namespace System;
     using namespace System::ComponentModel;
     using namespace System::Collections;
@@ -23,6 +22,7 @@ namespace TaxiManager {
         {
             InitializeComponent();
             taxiList = gcnew TaxiList();
+
         }
 
     protected:
@@ -86,7 +86,7 @@ namespace TaxiManager {
             this->btnAdd->Name = L"btnAdd";
             this->btnAdd->Size = System::Drawing::Size(100, 30);
             this->btnAdd->TabIndex = 1;
-            this->btnAdd->Text = L"Äîáàâèòü";
+            this->btnAdd->Text = L"Добавить";
             this->btnAdd->UseVisualStyleBackColor = true;
             this->btnAdd->Click += gcnew System::EventHandler(this, &MainForm::btnAdd_Click);
             // 
@@ -96,7 +96,7 @@ namespace TaxiManager {
             this->btnEdit->Name = L"btnEdit";
             this->btnEdit->Size = System::Drawing::Size(100, 30);
             this->btnEdit->TabIndex = 2;
-            this->btnEdit->Text = L"Èçìåíèòü";
+            this->btnEdit->Text = L"Изменить";
             this->btnEdit->UseVisualStyleBackColor = true;
             this->btnEdit->Click += gcnew System::EventHandler(this, &MainForm::btnEdit_Click);
             // 
@@ -106,7 +106,7 @@ namespace TaxiManager {
             this->btnDelete->Name = L"btnDelete";
             this->btnDelete->Size = System::Drawing::Size(100, 30);
             this->btnDelete->TabIndex = 3;
-            this->btnDelete->Text = L"Óäàëèòü";
+            this->btnDelete->Text = L"Удалить";
             this->btnDelete->UseVisualStyleBackColor = true;
             this->btnDelete->Click += gcnew System::EventHandler(this, &MainForm::btnDelete_Click);
             // 
@@ -116,7 +116,7 @@ namespace TaxiManager {
             this->btnStatus->Name = L"btnStatus";
             this->btnStatus->Size = System::Drawing::Size(131, 30);
             this->btnStatus->TabIndex = 4;
-            this->btnStatus->Text = L"Èçìåíèòü ñòàòóñ";
+            this->btnStatus->Text = L"Изменить статус";
             this->btnStatus->UseVisualStyleBackColor = true;
             this->btnStatus->Click += gcnew System::EventHandler(this, &MainForm::btnStatus_Click);
             // 
@@ -126,7 +126,7 @@ namespace TaxiManager {
             this->btnSave->Name = L"btnSave";
             this->btnSave->Size = System::Drawing::Size(100, 30);
             this->btnSave->TabIndex = 5;
-            this->btnSave->Text = L"Ñîõðàíèòü";
+            this->btnSave->Text = L"Сохранить";
             this->btnSave->UseVisualStyleBackColor = true;
             this->btnSave->Click += gcnew System::EventHandler(this, &MainForm::btnSave_Click);
             // 
@@ -136,7 +136,7 @@ namespace TaxiManager {
             this->btnLoad->Name = L"btnLoad";
             this->btnLoad->Size = System::Drawing::Size(100, 30);
             this->btnLoad->TabIndex = 6;
-            this->btnLoad->Text = L"Çàãðóçèòü";
+            this->btnLoad->Text = L"Загрузить";
             this->btnLoad->UseVisualStyleBackColor = true;
             this->btnLoad->Click += gcnew System::EventHandler(this, &MainForm::btnLoad_Click);
             // 
@@ -146,7 +146,7 @@ namespace TaxiManager {
             this->btnShowAvailable->Name = L"btnShowAvailable";
             this->btnShowAvailable->Size = System::Drawing::Size(130, 30);
             this->btnShowAvailable->TabIndex = 7;
-            this->btnShowAvailable->Text = L"Ïîêàçàòü ñâîáîäíûå";
+            this->btnShowAvailable->Text = L"Показать доступные";
             this->btnShowAvailable->UseVisualStyleBackColor = true;
             this->btnShowAvailable->Click += gcnew System::EventHandler(this, &MainForm::btnShowAvailable_Click);
             // 
@@ -156,7 +156,7 @@ namespace TaxiManager {
             this->btnShowBusy->Name = L"btnShowBusy";
             this->btnShowBusy->Size = System::Drawing::Size(150, 30);
             this->btnShowBusy->TabIndex = 8;
-            this->btnShowBusy->Text = L"Ïîêàçàòü çàíÿòûå";
+            this->btnShowBusy->Text = L"Показать занятые";
             this->btnShowBusy->UseVisualStyleBackColor = true;
             this->btnShowBusy->Click += gcnew System::EventHandler(this, &MainForm::btnShowBusy_Click);
             // 
@@ -166,7 +166,7 @@ namespace TaxiManager {
             this->btnShowAll->Name = L"btnShowAll";
             this->btnShowAll->Size = System::Drawing::Size(103, 30);
             this->btnShowAll->TabIndex = 9;
-            this->btnShowAll->Text = L"Ïîêàçàòü âñå";
+            this->btnShowAll->Text = L"Показать все";
             this->btnShowAll->UseVisualStyleBackColor = true;
             this->btnShowAll->Click += gcnew System::EventHandler(this, &MainForm::btnShowAll_Click);
             // 
@@ -176,7 +176,7 @@ namespace TaxiManager {
             this->btnAddBefore->Name = L"btnAddBefore";
             this->btnAddBefore->Size = System::Drawing::Size(100, 30);
             this->btnAddBefore->TabIndex = 10;
-            this->btnAddBefore->Text = L"Äîáàâèòü ïåðåä";
+            this->btnAddBefore->Text = L"Добавить перед";
             this->btnAddBefore->UseVisualStyleBackColor = true;
             this->btnAddBefore->Click += gcnew System::EventHandler(this, &MainForm::btnAddBefore_Click);
             // 
@@ -186,7 +186,7 @@ namespace TaxiManager {
             this->btnAddAfter->Name = L"btnAddAfter";
             this->btnAddAfter->Size = System::Drawing::Size(100, 30);
             this->btnAddAfter->TabIndex = 11;
-            this->btnAddAfter->Text = L"Äîáàâèòü ïîñëå";
+            this->btnAddAfter->Text = L"Добавить после";
             this->btnAddAfter->UseVisualStyleBackColor = true;
             this->btnAddAfter->Click += gcnew System::EventHandler(this, &MainForm::btnAddAfter_Click);
             // 
@@ -208,7 +208,7 @@ namespace TaxiManager {
             this->Controls->Add(this->btnAdd);
             this->Controls->Add(this->listView1);
             this->Name = L"MainForm";
-            this->Text = L"Óïðàâëåíèå òàêñè";
+            this->Text = L"Управление заказами такси";
             this->Load += gcnew System::EventHandler(this, &MainForm::MainForm_Load);
             this->ResumeLayout(false);
 
@@ -217,10 +217,10 @@ namespace TaxiManager {
     private:
         
         System::Void MainForm_Load(System::Object^ sender, System::EventArgs^ e) {
-            listView1->Columns->Add("Íîìåð", 100);
-            listView1->Columns->Add("Ìàðêà", 150);
-            listView1->Columns->Add("Âîäèòåëü", 200);
-            listView1->Columns->Add("Ñòàòóñ", 100);
+            listView1->Columns->Add("Номер", 100);
+            listView1->Columns->Add("Марка", 150);
+            listView1->Columns->Add("Водитель", 200);
+            listView1->Columns->Add("Статус", 100);
             listView1->View = View::Details;
             listView1->FullRowSelect = true;
             listView1->GridLines = true;
@@ -232,7 +232,7 @@ namespace TaxiManager {
             AddForm^ addForm = gcnew AddForm();
             if (addForm->ShowDialog() == Windows::Forms::DialogResult::OK) {
                 if (taxiList->FindTaxi(addForm->GetNumber()) != nullptr) {
-                    MessageBox::Show("Òàêñè ñ òàêèì íîìåðîì óæå ñóùåñòâóåò!", "Îøèáêà",
+                    MessageBox::Show("Такси с таким номером уже существует!", "Ошибка",
                         MessageBoxButtons::OK, MessageBoxIcon::Error);
                     return;
                 }
@@ -249,7 +249,7 @@ namespace TaxiManager {
 
         System::Void btnAddBefore_Click(System::Object^ sender, System::EventArgs^ e) {
             if (listView1->SelectedItems->Count == 0) {
-                MessageBox::Show("Âûáåðèòå òàêñè, ïåðåä êîòîðûì íóæíî äîáàâèòü íîâîå", "Îøèáêà",
+                MessageBox::Show("Выберите такси, перед которым нужно добавить новое", "Ошибка",
                     MessageBoxButtons::OK, MessageBoxIcon::Error);
                 return;
             }
@@ -259,7 +259,7 @@ namespace TaxiManager {
                 String^ targetNumber = listView1->SelectedItems[0]->Text;
 
                 if (taxiList->FindTaxi(addForm->GetNumber()) != nullptr) {
-                    MessageBox::Show("Òàêñè ñ òàêèì íîìåðîì óæå ñóùåñòâóåò!", "Îøèáêà",
+                    MessageBox::Show("Такси с таким номером уже существует!", "Ошибка",
                         MessageBoxButtons::OK, MessageBoxIcon::Error);
                     return;
                 }
@@ -277,7 +277,7 @@ namespace TaxiManager {
 
         System::Void btnAddAfter_Click(System::Object^ sender, System::EventArgs^ e) {
             if (listView1->SelectedItems->Count == 0) {
-                MessageBox::Show("Âûáåðèòå òàêñè, ïîñëå êîòîðîãî íóæíî äîáàâèòü íîâîå", "Îøèáêà",
+                MessageBox::Show("Выберите такси, после которого нужно добавить новое", "Ошибка",
                     MessageBoxButtons::OK, MessageBoxIcon::Error);
                 return;
             }
@@ -287,7 +287,7 @@ namespace TaxiManager {
                 String^ targetNumber = listView1->SelectedItems[0]->Text;
 
                 if (taxiList->FindTaxi(addForm->GetNumber()) != nullptr) {
-                    MessageBox::Show("Òàêñè ñ òàêèì íîìåðîì óæå ñóùåñòâóåò!", "Îøèáêà",
+                    MessageBox::Show("Такси с таким номером уже существует", "Ошибка",
                         MessageBoxButtons::OK, MessageBoxIcon::Error);
                     return;
                 }
@@ -305,7 +305,7 @@ namespace TaxiManager {
 
         System::Void btnEdit_Click(System::Object^ sender, System::EventArgs^ e) {
             if (listView1->SelectedItems->Count == 0) {
-                MessageBox::Show("Âûáåðèòå òàêñè äëÿ ðåäàêòèðîâàíèÿ", "Îøèáêà",
+                MessageBox::Show("Выберите такси для редактирования", "Ошибка",
                     MessageBoxButtons::OK, MessageBoxIcon::Error);
                 return;
             }
@@ -327,13 +327,13 @@ namespace TaxiManager {
 
         System::Void btnDelete_Click(System::Object^ sender, System::EventArgs^ e) {
             if (listView1->SelectedItems->Count == 0) {
-                MessageBox::Show("Âûáåðèòå òàêñè äëÿ óäàëåíèÿ", "Îøèáêà",
+                MessageBox::Show("Выберите такси для удаления", "Ошибка",
                     MessageBoxButtons::OK, MessageBoxIcon::Error);
                 return;
             }
 
-            if (MessageBox::Show("Âû óâåðåíû, ÷òî õîòèòå óäàëèòü âûáðàííîå òàêñè?",
-                "Ïîäòâåðæäåíèå", MessageBoxButtons::YesNo, MessageBoxIcon::Question) == Windows::Forms::DialogResult::Yes) {
+            if (MessageBox::Show("Вы уверены, что хотите удалить выбранное такси?",
+                "Ошибка", MessageBoxButtons::YesNo, MessageBoxIcon::Question) == Windows::Forms::DialogResult::Yes) {
                 String^ number = listView1->SelectedItems[0]->Text;
                 taxiList->RemoveTaxi(number);
                 taxiList->UpdateListView(listView1);
@@ -342,7 +342,7 @@ namespace TaxiManager {
 
         System::Void btnStatus_Click(System::Object^ sender, System::EventArgs^ e) {
             if (listView1->SelectedItems->Count == 0) {
-                MessageBox::Show("Âûáåðèòå òàêñè äëÿ èçìåíåíèÿ ñòàòóñà", "Îøèáêà",
+                MessageBox::Show("Выберите такси для изменения статуса", "Ошибка",
                     MessageBoxButtons::OK, MessageBoxIcon::Error);
                 return;
             }
@@ -360,16 +360,16 @@ namespace TaxiManager {
         System::Void btnSave_Click(System::Object^ sender, System::EventArgs^ e) {
             SaveFileDialog^ saveDialog = gcnew SaveFileDialog();
             saveDialog->Filter = "Text files (*.txt)|*.txt";
-            saveDialog->Title = "Ñîõðàíèòü äàííûå òàêñè";
+            saveDialog->Title = "Сохранить данные такси";
 
             if (saveDialog->ShowDialog() == Windows::Forms::DialogResult::OK) {
                 try {
                     taxiList->SaveToFile(saveDialog->FileName);
-                    MessageBox::Show("Äàííûå óñïåøíî ñîõðàíåíû", "Óñïåõ",
+                    MessageBox::Show("Данные успешно сохранены", "Успех",
                         MessageBoxButtons::OK, MessageBoxIcon::Information);
                 }
                 catch (Exception^ ex) {
-                    MessageBox::Show("Îøèáêà ïðè ñîõðàíåíèè: " + ex->Message, "Îøèáêà",
+                    MessageBox::Show("Ошибка при сохранении: " + ex->Message, "Ошибка",
                         MessageBoxButtons::OK, MessageBoxIcon::Error);
                 }
             }
@@ -378,17 +378,17 @@ namespace TaxiManager {
         System::Void btnLoad_Click(System::Object^ sender, System::EventArgs^ e) {
             OpenFileDialog^ openDialog = gcnew OpenFileDialog();
             openDialog->Filter = "Text files (*.txt)|*.txt";
-            openDialog->Title = "Çàãðóçèòü äàííûå òàêñè";
+            openDialog->Title = "Загрузить данные такси";
 
             if (openDialog->ShowDialog() == Windows::Forms::DialogResult::OK) {
                 try {
                     taxiList->LoadFromFile(openDialog->FileName);
                     taxiList->UpdateListView(listView1);
-                    MessageBox::Show("Äàííûå óñïåøíî çàãðóæåíû", "Óñïåõ",
+                    MessageBox::Show("Данные успешно загружены", "Успех",
                         MessageBoxButtons::OK, MessageBoxIcon::Information);
                 }
                 catch (Exception^ ex) {
-                    MessageBox::Show("Îøèáêà ïðè çàãðóçêå: " + ex->Message, "Îøèáêà",
+                    MessageBox::Show("Ошибка при загрузке: " + ex->Message, "Ошибка",
                         MessageBoxButtons::OK, MessageBoxIcon::Error);
                 }
             }

@@ -7,7 +7,7 @@ using namespace System::Windows::Forms;
 int main(array<String^>^ args) {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
-
+	
 	TaxiManager::MainForm form;
 	Application::Run(%form);
 
